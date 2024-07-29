@@ -1,0 +1,349 @@
+/* General button styles */
+button {
+    width: 100%;
+    margin-bottom: 10px;
+    padding: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Export button styles */
+#export-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#export-button:hover {
+    background-color: #0056b3;
+}
+
+/* Quill editor styles */
+.ql-toolbar {
+    background-color: #fff;
+    margin-bottom: 10px;
+    z-index: 10;
+}
+
+.ql-container {
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    min-height: 200px;
+    max-height: 200px;
+    overflow: auto;
+    flex-grow: 1;
+    direction: ltr;
+    padding: 20px; /* Add padding for better text spacing */
+}
+
+.rich-text-editor {
+    flex-grow: 1;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    direction: ltr;
+}
+
+/* Improved readability styles */
+.ql-editor {
+    padding: 20px; /* Add padding for better text spacing */
+    background-color: #f9f9f9; /* Light background for better contrast */
+    border-radius: 5px; /* Rounded corners for a softer look */
+    border: 1px solid #ddd; /* Light border for definition */
+    font-family: 'Arial', sans-serif; /* Choose a clean, sans-serif font */
+    font-size: 12px; /* Adjust font size for readability */
+}
+
+.ql-editor p {
+    line-height: 1.6; /* Adjust as needed */
+    margin-bottom: 1em; /* Space between paragraphs */
+}
+
+.ql-editor ul,
+.ql-editor ol {
+    padding-left: 20px; /* Indent bullet points */
+    margin-bottom: 1em; /* Space after list */
+}
+
+.ql-editor li {
+    margin-bottom: 0.5em; /* Space between list items */
+}
+
+.ql-editor h1 {
+    font-size: 1.5em; /* Adjust size as needed */
+    margin-bottom: 0.5em; /* Space below heading */
+}
+
+.ql-editor h2 {
+    font-size: 1.3em;
+    margin-bottom: 0.5em;
+}
+
+.ql-editor h3 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.ql-editor h4 {
+    font-size: 1.1em;
+    margin-bottom: 0.5em;
+}
+
+.ql-editor ul {
+    list-style-type: disc;
+}
+
+.ql-editor ol {
+    list-style-type: decimal;
+}
+
+.ql-editor strong {
+    font-weight: bold;
+    color: #333; /* Darker color for better contrast */
+}
+
+.ql-editor h1,
+.ql-editor h2,
+.ql-editor h3,
+.ql-editor h4 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.ql-editor p {
+    margin-bottom: 10px;
+}
+
+/* Content wrapper styles */
+.content-wrapper {
+    display: flex;
+    align-items: flex-start;
+    gap: 20px;
+    width: 100%;
+    position: relative;
+}
+
+.template-small-image-content {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.image-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: auto;
+}
+
+/* Image styles */
+.small-image {
+    max-width: 350px;
+    width: 70%;
+    height: auto;
+}
+
+.large-image {
+    max-width: 1600px;
+    width: 70%;
+    height: auto;
+}
+
+.delete-image-btn {
+    margin-top: 10px;
+    padding: 2px 5px;
+    font-size: 12px;
+    background-color: red;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+}
+
+.delete-image-btn:hover {
+    background-color: darkred;
+}
+
+.image-buttons {
+    display: flex;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.image-buttons button {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.image-buttons button.active {
+    background-color: #0056b3;
+}
+
+.image-buttons button:hover {
+    background-color: #0056b3;
+}
+
+/* Body and container styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    direction: ltr;
+}
+
+#container {
+    display: flex;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    flex-grow: 1;
+}
+
+#sidebar {
+    width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-right: 20px;
+}
+
+/* Content area and block styles */
+#content-area {
+    flex-grow: 1;
+    min-height: 400px;
+    border: 2px dashed #ccc;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.block {
+    position: relative;
+    margin-bottom: 20px;
+    padding: 10px;
+    background-color: #e9ecef;
+    border-radius: 4px;
+    border: 1px solid #ced4da;
+    overflow: hidden;
+}
+
+.block-content {
+    padding-right: 60px;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+    direction: ltr;
+}
+
+.block-buttons {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+}
+
+.block-buttons button {
+    margin-bottom: 5px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.block-buttons button.delete-btn {
+    background-color: red;
+}
+
+.block-buttons button:hover {
+    background-color: #0056b3;
+}
+
+.block-buttons button.delete-btn:hover {
+    background-color: darkred;
+}
+
+/* Form elements styles */
+textarea, input[type="text"], input[type="file"], select {
+    width: 100%;
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid #ced4da;
+    border-radius: 4px;
+    background-color: #fff;
+    font-family: Arial, sans-serif;
+    direction: ltr;
+}
+
+input[type="file"]::file-selector-button {
+    content: "Add image";
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 10px;
+    cursor: pointer;
+}
+
+input[type="file"]::file-selector-button:hover {
+    background-color: #0056b3;
+}
+
+/* Image styles */
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Add question button styles */
+.add-question-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 10px;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #ddd;
+}
+
+.add-mcq-btn, .add-open-btn {
+    padding: 5px 10px;
+    font-size: 12px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    max-width: 150px;
+    text-align: center;
+}
+
+.add-mcq-btn:hover, .add-open-btn:hover {
+    background-color: #0056b3;
+}
