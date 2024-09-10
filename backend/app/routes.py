@@ -4,8 +4,10 @@ import traceback
 
 routes = Blueprint('routes', __name__)
 
-@routes.route('/generate_lesson', methods=['POST'])
+@routes.route('/generate_lesson', methods=['POST', 'OPTIONS'])
 def generate_lesson():
+    if request.method == 'OPTIONS':
+        return jsonify({'status': 'OK'}), 200
     data = request.json
     topic = data.get('topic')
     audience = data.get('audience')

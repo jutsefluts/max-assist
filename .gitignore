@@ -279,3 +279,4 @@ Thumbs.db
 
 # Custom ignores
 get-pip.py
+.DS_Store
